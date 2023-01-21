@@ -1,6 +1,5 @@
 const passwordInput = document.querySelector('#password');
 const confirmPasswordInput = document.querySelector('#confirm-password');
-const errorTextSpan = document.querySelector('#error-text');
 const signUpForm = document.querySelector('#sign-up-form');
 
 const isPasswordsMatch = () => {
@@ -13,11 +12,11 @@ const handleSubmit = (e) => {
   if(!isPasswordsMatch()) {
     passwordInput.classList.add('error');
     confirmPasswordInput.classList.add('error');
-    errorTextSpan.textContent = '* Passwords do not match';
+    passwordInput.nextElementSibling.textContent = '* Passwords do not match';
   } else {
     passwordInput.classList.remove('error');
     confirmPasswordInput.classList.remove('error');
-    errorTextSpan.textContent = '';
+    passwordInput.nextElementSibling.textContent = '';
   }
 }
 

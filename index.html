@@ -27,21 +27,21 @@
             <fieldset>
               <div class="form-left">
                 <label for="first-name">first name</label>
-                <input id="first-name" name="first-name" type="text">
-                <label id="label-email" for="email">email</label>
+                <input id="first-name" name="first-name" type="text" required>
+                <label for="email">email</label>
                 <input id="email" name="email" type="email" required>
                 <label for="password">password</label>
-                <input id="password" name="password" type="password" required>
-                <span id="error-text" class="error-text"></span>
+                <input id="password" name="password" type="password" required minlength="8">
+                <span class="error-text"></span>
               </div>
 
               <div class="form-right">
                 <label for="last-name">last name</label>
-                <input id="last-name" name="last-name" type="text">
+                <input id="last-name" name="last-name" type="text" required>
                 <label for="tel">phone number</label>
-                <input id="tel" name="tel" type="tel">
+                <input id="tel" name="tel" type="tel" required>
                 <label for="confirm-password">confirm password</label>
-                <input id="confirm-password" name="confirm-password" type="password" required>
+                <input id="confirm-password" name="confirm-password" type="password" required minlength="8">
               </div>
             </fieldset>
           </div>
