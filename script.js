@@ -7,10 +7,6 @@ const isPasswordsMatch = () => {
   return passwordInput.value === confirmPasswordInput.value;
 }
 
-const passwordsLengthCheck = () => {
-  return passwordInput.value < 8 || confirmPasswordInput.value < 8;
-}
-
 const handleSubmit = (e) => {
   e.preventDefault();
 
