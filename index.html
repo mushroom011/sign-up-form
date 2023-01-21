@@ -16,39 +16,41 @@
           odin
         </div>
       </div>
-      <div class="right">
-        <header>
-          <h1>Sign up to get started</h1>
-        </header>
 
-        <form action="/">
-          <h3 class="form-title">Let's do this!</h3>
-          <fieldset>
-            <div class="form-left">
-              <label for="first-name">first name</label>
-              <input id="first-name" name="first-name" type="text">
-              <label for="email">email</label>
-              <input id="email" name="email" type="email">
-              <label for="password">password</label>
-              <input id="password" name="password" type="password">
-            </div>
+      <form id="sign-up-form" class="right" action="/">
+          <header>
+            <h1>Sign up to get started</h1>
+          </header>
 
-            <div class="form-right">
-              <label for="last-name">last name</label>
-              <input id="last-name" name="last-name" type="text">
-              <label for="tel">phone number</label>
-              <input id="tel" name="tel" type="tel">
-              <label for="confirm-password">confirm password</label>
-              <input id="confirm-password" name="confirm-password" type="password">
-            </div>
-          </fieldset>
+          <div class="background">
+            <h3 class="form-title">Let's do this!</h3>
+            <fieldset>
+              <div class="form-left">
+                <label for="first-name">first name</label>
+                <input id="first-name" name="first-name" type="text">
+                <label id="label-email" for="email">email</label>
+                <input id="email" name="email" type="email" required>
+                <label for="password">password</label>
+                <input id="password" name="password" type="password" required>
+                <span id="error-text" class="error-text"></span>
+              </div>
+
+              <div class="form-right">
+                <label for="last-name">last name</label>
+                <input id="last-name" name="last-name" type="text">
+                <label for="tel">phone number</label>
+                <input id="tel" name="tel" type="tel">
+                <label for="confirm-password">confirm password</label>
+                <input id="confirm-password" name="confirm-password" type="password" required>
+              </div>
+            </fieldset>
+          </div>
+
+          <footer>
+            <button class="btn">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </footer>
         </form>
-
-        <footer>
-          <button class="btn">Create Account</button>
-          <p>Already have an account? <a href="#">Log in</a></p>
-        </footer>
-      </div>
     </div>
   </body>
 </html>

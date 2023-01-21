@@ -59,7 +59,7 @@ header {
   padding: 60px;
 }
 
-form {
+.background {
   padding: 15px 45px 25px 45px;
   box-shadow: 1px 2px 8px #e5e8ea;
   background-color: #ffffff;
@@ -92,6 +92,14 @@ form input:focus {
   border: 2px solid #4f8da0;
 }
 
+form input.error {
+  border: 2px solid #CE6060;
+}
+
+form .error-text {
+  color: #CE6060;
+}
+
 fieldset {
   display: flex;
   flex-wrap: wrap;
@@ -118,6 +126,10 @@ footer .btn {
   cursor: pointer;
   margin-bottom: 20px;
   font-size: 16px;
+}
+
+footer .btn:hover {
+  background-color: #2b5b5d;
 }
 
 footer a {
